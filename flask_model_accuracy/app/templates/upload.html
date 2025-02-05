@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload CSV</title>
+</head>
+<body>
+    <h2>Upload your CSV file</h2>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <!-- Input field to allow the user to select the target column -->
+        <input type="text" name="target_column" placeholder="Enter the target column" required>
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>

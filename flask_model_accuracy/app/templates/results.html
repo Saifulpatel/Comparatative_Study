@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Model Accuracy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2em;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            font-size: 1.1em;
+        }
+        .accuracy {
+            background: #e8f5e9;
+            padding: 1em;
+            border-radius: 4px;
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Model Accuracy</h2>
+        <div class="accuracy">
+            <p><strong>Simple Model Accuracy:</strong> {{ results.simple_accuracy }}%</p>
+            <p><strong>Hyperparameter Tuned Accuracy:</strong> {{ results.tuned_accuracy }}%</p>
+        </div>
+        <a href="{{ url_for('main.home') }}">Upload another file</a>
+    </div>
+</body>
+</html>
